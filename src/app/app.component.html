@@ -1,0 +1,28 @@
+<main class="myTable" *ngIf="dataSrc">
+  <table class="table table-bordered table-hover">
+    <thead class="table-primary ">
+      <tr>
+        <th scope="the">Invite Id</th>
+        <th scope="col">Sender Id</th>
+        <th scope="col">Vector</th>
+        <th scope="col">Sig Id</th>
+        <th scope="col">Status</th>
+        <th scope="col">Invite Time</th>
+        <th scope="col">Invite</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of dataSrc">
+        <td scope="row">{{item.invite_id}}</td>
+        <td>{{item.sender_id}}</td>
+        <td>{{item.vector}}</td>
+        <td>{{item.sig_id}}</td>
+        <td>{{item.status}}</td>
+        <td>{{item.invite_time}}</td>
+        <td>{{item.invite}}</td>
+      </tr>
+    </tbody>
+  </table>
+</main>
+
+<!------ Include the above in your HEAD tag ---------->
